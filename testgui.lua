@@ -34,6 +34,9 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
+local Tab = Window:CreateTab("Home", 115498016350004) -- Title, Image
+local Section = Tab:CreateSection("Main")
+
 local Button = Tab:CreateButton({
    Name = "StarvingArtists",
    Callback = function(loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Utilities/main/Closed/StarvingArtist.lua"))())

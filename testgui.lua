@@ -45,10 +45,3 @@ Rayfield:Notify({
    Duration = 6.5,
    Image = 4483362458,
 })
-
-local Button = Tab:CreateButton({
-   Name = "StarvingArtist",
-   Callback = function(loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Utilities/main/Closed/StarvingArtist.lua"))())
-   -- The function that takes place when the button is pressed
-   end,
-})

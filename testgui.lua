@@ -34,14 +34,14 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("Home", Nil) -- Title, Image
+local Tab = Window:CreateTab("Home") -- Title, Image
 local Section = Tab:CreateSection("Main")
 
 Rayfield:Notify({
    Title = "Executed Script Succesfully",
    Content = "Notification Content",
    Duration = 5,
-   Image = Nil,
+   Image = ,
 })
 
 local Button = Tab:CreateButton({

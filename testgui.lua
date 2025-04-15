@@ -43,10 +43,3 @@ Rayfield:Notify({
    Duration = 5,
    Image = ,
 })
-
-local Button = Tab:CreateButton({
-   Name = "StarvingArtists",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-   end,
-})

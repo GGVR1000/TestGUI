@@ -33,3 +33,10 @@ local Window = Rayfield:CreateWindow({
       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
+
+local Button = Tab:CreateButton({
+   Name = "StarvingArtists",
+   Callback = function(loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Utilities/main/Closed/StarvingArtist.lua"))())
+   -- The function that takes place when the button is pressed
+   end,
+})

@@ -1,10 +1,10 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "GG Scripts",
+   Name = "Rayfield Example Window",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
-   LoadingTitle = "GGscripts",
-   LoadingSubtitle = "by CrayRay12341",
+   LoadingTitle = "Rayfield Interface Suite",
+   LoadingSubtitle = "by Sirius",
    Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
 
    DisableRayfieldPrompts = false,
@@ -34,14 +34,21 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
-local Section = Tab:CreateSection("Main")
+local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Section Example")
 
 local Divider = Tab:CreateDivider()
 
 Rayfield:Notify({
-   Title = "Running Success",
-   Content = "Running This Script Successfully",
+   Title = "Notification Title",
+   Content = "Notification Content",
    Duration = 6.5,
    Image = 4483362458,
+})
+
+local Button = Tab:CreateButton({
+   Name = "StarvingArtist",
+   Callback = function(loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Utilities/main/Closed/StarvingArtist.lua"))())
+   -- The function that takes place when the button is pressed
+   end,
 })

@@ -52,3 +52,10 @@ local Button = Tab:CreateButton({
    -- The function that takes place when the button is pressed
    end,
 })
+
+local Button = Tab:CreateButton({
+   Name = "StarvingArtists",
+   Callback = function(loadstring(game:HttpGet("https://raw.githubusercontent.com/itsnoctural/Utilities/main/Closed/StarvingArtist.lua"))())
+   -- The function that takes place when the button is pressed
+   end,
+})
